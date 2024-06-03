@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+	int time,a,b;
+	cin >> time;
+	for(int i = 0;i < time;i++){
+		cin >> a >> b;
+		cout << a << "+" << b << "=" << a+b << endl;
+	}
+	return 0; 
+}

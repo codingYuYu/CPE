@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	string s;
+	while(getline(cin,s)){
+		istringstream sin(s);
+		vector<int> a;
+		int v;
+		while(sin>>v){
+			a.push_back(v);
+		}
+		
+		map<int,int> sum;
+		for(int k=0;k<a.size();k++){
+			for(int h=k+1;h<a.size();h++){
+				sum[a[k]+a[h]]++;
+			}
+		}
+		for(auto it=sum.begin();it!=sum.end();it++){
+			cout<<(*it).first<<":"<<(*it).second<<endl;
+		}
+		cout<<endl;		
+	}
+}

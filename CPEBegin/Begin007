@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	while(true){
+		string s;
+		getline(cin,s,'#');
+		if(s=="")break;
+		istringstream sin(s);
+		int sum=0,n;
+		while(sin>>n){
+			sum+=n;
+		}
+		cout << "Sum=" << sum << endl;
+	}
+	return 0;
+}

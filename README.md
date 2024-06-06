@@ -1,3 +1,3 @@
 # CPE
-practiced CPE
+Practiced CPE
 ## Using C++
